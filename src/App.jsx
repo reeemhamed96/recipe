@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createHashRouter } from 'react-router-dom'
 import './App.scss'
 import Layout from './Pages/Layout/Layout'
 import Meals from './Components/Meals/Meals'
@@ -6,7 +6,7 @@ import MealDetails from './Pages/MealDetails/MealDetails'
 
 function App() {
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "", element: <Layout />, children: [
         {
